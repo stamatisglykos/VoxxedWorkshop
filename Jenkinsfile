@@ -23,7 +23,7 @@ pipeline{
 		}
 		stage('Build Docker Image'){
 			steps {
-				sh 'docker build -t voxxedDocker-sg .'
+				sh 'docker build -t voxxedsg .'
 			}			
 		}
 				
