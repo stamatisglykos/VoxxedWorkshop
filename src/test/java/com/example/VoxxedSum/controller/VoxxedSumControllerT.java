@@ -1,4 +1,4 @@
-package com.example.VoxxedSum;
+package com.example.VoxxedSum.controller;
 
 import static org.junit.Assert.assertEquals;
 
@@ -9,16 +9,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class VoxxedSumApplicationTests {
-
-	@Test
-	public void contextLoads() {
-	}
+public class VoxxedSumControllerT {
 	
 	@Test
 	public void Sum() {
-		VoxxedSumController sum = new VoxxedSumController();
-		int result = sum.sum(1, 2);
+		VoxxedSumController sumCtrl = new VoxxedSumController();
+		int result = sumCtrl.sum(1, 2);
 		
 		assertEquals(3,  result);
 	}
