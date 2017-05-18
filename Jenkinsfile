@@ -21,6 +21,11 @@ pipeline{
 				sh './mvnw -Dskip.test package'
 			}			
 		}
+		stage('Build Docker Image'){
+			steps {
+				sh 'docker build -t voxxedDocker-sg .'
+			}			
+		}
 				
 	}	
 }
