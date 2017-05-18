@@ -23,7 +23,8 @@ pipeline{
 		}
 		stage('Build Docker Image'){
 			steps {
-				sh 'docker build -t voxxedsg .'
+				sh 'docker build -t 10.0.2.15:5000/voxxedsg .'
+				sh 'docker push 10.0.2.15:5000/voxxedsg'
 			}			
 		}
 				
