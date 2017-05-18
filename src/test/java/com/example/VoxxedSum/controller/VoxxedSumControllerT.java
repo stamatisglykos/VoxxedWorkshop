@@ -16,7 +16,7 @@ public class VoxxedSumControllerT {
 		VoxxedSumController sumCtrl = new VoxxedSumController();
 		int result = sumCtrl.sum(1, 2);
 		
-		assertEquals(3,  result);
+		assertEquals(5,  result);
 	}
 
 }
