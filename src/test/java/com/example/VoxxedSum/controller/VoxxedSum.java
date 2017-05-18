@@ -9,14 +9,14 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class VoxxedSumControllerT {
+public class VoxxedSum {
 	
 	@Test
 	public void Sum() {
 		VoxxedSumController sumCtrl = new VoxxedSumController();
 		int result = sumCtrl.sum(1, 2);
 		
-		assertEquals(5,  result);
+		assertEquals(6,  result);
 	}
 
 }
