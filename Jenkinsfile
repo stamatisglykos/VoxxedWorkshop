@@ -3,18 +3,9 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        parallel(
-          "Compile": {
-            sh 'ls -al'
-            sh 'chmod +x mvnw'
-            sh './mvnw compile'
-            
-          },
-          "": {
-            sleep 60
-            
-          }
-        )
+        sh 'ls -al'
+        sh 'chmod +x mvnw'
+        sh './mvnw compile'
       }
     }
     stage('Unit test') {
